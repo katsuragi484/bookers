@@ -1,2 +1,28 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<h1>Books</h1>
+<%= form_with model: Book.new do |f| %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+  <% if #{book.id} = nil %>
+  <tr>
+    <td>a</td>
+    <td>b</td>
+    <td>d</td>
+    <td>e</td>
+  </tr>
+  <% else %>
+  <% end %>
+</table>
+
+<h2>New book</h2>
+
+  <label>Title</label>
+  <%= f.text_field :title %>
+  <label>Body</label>
+  <%= f.text_area :body %>
+
+  <%= f.submit "Create Book"%>
+<% end %>
