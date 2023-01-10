@@ -56,3 +56,7 @@ div{
 a{
   color: #666666;
 }
+
+.error{
+  color: red;
+}
